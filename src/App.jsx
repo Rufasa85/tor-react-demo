@@ -9,12 +9,7 @@ function App() {
       <h2 className="Apph2">Subhead</h2>
       <Name person="Thom" favColor="deepskyblue"/>
       <hr/>
-      <Name person="Logan"/>
-      <Name person="Manjot"/>
-      <Name person="Rahul"/>
-      <Name person ="Joe" favColor = "salmon"/>
-      <img src="http://placekitten.com/g/200/300"/>
-      {[<p>hello</p>,<p>world</p>]}
+      {names.map((item,index)=><Name key={index} person={item}/>)}
     </div>
   )
 }
